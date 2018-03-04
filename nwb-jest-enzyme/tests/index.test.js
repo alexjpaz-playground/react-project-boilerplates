@@ -7,6 +7,6 @@ describe('Component', () => {
     const wrapper = shallow((
         <div className="unique" />
     ));
-    expect(wrapper.contains(<div className="unique" />)).to.equal(true);
+    expect(wrapper.contains(<div className="unique" />)).toEqual(true);
   });
 })
