@@ -1,13 +1,12 @@
-import expect from 'expect'
 import React from 'react'
+import { shallow } from 'enzyme';
 import {render, unmountComponentAtNode} from 'react-dom'
 
-import Component from '../src/'
-
 describe('Component', () => {
-  it('displays a welcome message', () => {
-    render(<Component/>, node, () => {
-      expect(node.innerHTML).toContain('Welcome to React components')
-    })
-  })
+  it('renders children when passed in', () => {
+    const wrapper = shallow((
+        <div className="unique" />
+    ));
+    expect(wrapper.contains(<div className="unique" />)).to.equal(true);
+  });
 })
