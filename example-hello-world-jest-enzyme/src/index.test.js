@@ -6,6 +6,6 @@ describe('<MyComponent />', () => {
     const wrapper = shallow(<div>
       <h1>lol</h1>  
     </div>);
-    expect(wrapper.contains("lol")).to.equal(true);
+    expect(wrapper.contains("lol")).toEqual(true);
   });
 });
