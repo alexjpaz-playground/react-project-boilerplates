@@ -33,5 +33,10 @@
   "repository": "",
   "keywords": [
     "react-component"
-  ]
+  ],
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "<rootDir>/jest.transform.js"
+    }
+  }
 }
