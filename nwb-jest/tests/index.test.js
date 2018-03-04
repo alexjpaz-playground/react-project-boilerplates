@@ -4,6 +4,16 @@ import {render, unmountComponentAtNode} from 'react-dom'
 
 import Component from '../src/'
 
+  let node
+
+  beforeEach(() => {
+    node = document.createElement('div')
+  })
+
+  afterEach(() => {
+    unmountComponentAtNode(node)
+  })
+
 describe('Component', () => {
   it('displays a welcome message', () => {
     render(<Component/>, node, () => {
