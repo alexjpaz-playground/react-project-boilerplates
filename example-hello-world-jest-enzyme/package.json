@@ -24,6 +24,6 @@
     "jest-enzyme": "^4.2.0"
   },
   "jest": {
-      "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js"
+      "setupTestFrameworkScriptFile": "./tests/setupTests.js"
   }
 }
