@@ -1,7 +1,7 @@
 {
-  "name": "nwb-enzyme",
+  "name": "lol",
   "version": "1.0.0",
-  "description": "nwb-enzyme React component",
+  "description": ". React component",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -14,11 +14,11 @@
     "build": "nwb build-react-component",
     "clean": "nwb clean-module && nwb clean-demo",
     "start": "nwb serve-react-demo",
-    "test": "nwb test-react",
-    "test:coverage": "nwb test-react --coverage",
-    "test:watch": "nwb test-react --server"
+    "test": "jest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jest": "^22.4.2"
+  },
   "peerDependencies": {
     "react": "16.x"
   },
